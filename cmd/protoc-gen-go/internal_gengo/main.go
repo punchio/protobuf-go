@@ -401,7 +401,7 @@ func genMessageField(g *protogen.GeneratedFile, f *fileInfo, m *messageInfo, fie
 	}
 	tags := structTags{
 		{"protobuf", fieldProtobufTagValue(field)},
-		{"json", fieldJSONTagValue(field)},
+		// {"json", fieldJSONTagValue(field)},
 	}
 	if field.Desc.IsMap() {
 		key := field.Message.Fields[0]
